@@ -1,0 +1,36 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://media.gazetadopovo.com.br/2020/07/16191901/cep-fachada-jose-fernando-ogura-aen-660x372.jpg');
+    background-size: cover;
+    background-position: center;
+    background
+}
+
+.logincard {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 3%;
+    gap: 30%;
+    flex-direction: row;
+    align-items: top;
+    background-color: #f0f3f5;
+    border: solid 1px #8a8181;
+    border-radius: 10%;
+    
+}
+
+.logintxt {
+
+}
