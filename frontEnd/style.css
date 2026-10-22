@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'priestacy';
+    src: url(../assets/Priestacy.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -9,7 +16,7 @@ html, body {
 body {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: row;
     z-index: -1;
     background-image: url('../assets/initialBackground.png');
@@ -18,14 +25,19 @@ body {
 }
 
 .logincard {
+    position: relative;
     display: flex;
     width: 35%;
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.8);
+    z-index: 1;
+    border-color: #050505;
+    border-radius: 10%;
+    backdrop-filter: blur(10px);
 }
 
 .logoEMsg {
@@ -37,18 +49,33 @@ body {
 }
 
 .linha {
-    width: 60%;
+    width: 50%;
     height: 1px;
-    background-color: #929292;
+    align-self: center;
+    background-color: #a08600;
 }
 
 .logintxt {
-    color: rgba(0, 0, 0);
-    position: absolute;
+    color: #3c3b3b;
     top: 4rem;
+    letter-spacing: 0.3rem;
     font-size: 7rem;
-    letter-spacing: 1vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     z-index: 2;
+    align-self: center;
+    line-height: 0.6;
+    margin: 1rem;
+   
+}
+
+.ltxt {
+
+    font-size: 2rem;
+    color: #050505;
+    font-family: 'priestacy', sans-serif;
+    margin-top: -2.5rem;
+    margin-right: -20rem;
+    font-weight: 100;
+    z-index: 3;
 }
