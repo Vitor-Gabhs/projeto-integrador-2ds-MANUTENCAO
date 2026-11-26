@@ -1,5 +1,6 @@
 const express = require('express');
-const app = express();
+const app = express.Router();
+let pedidos = require('../dados/pedidos.js');
 
 app.use (express.json())
 
@@ -51,10 +52,9 @@ app.put ('/pedidos/:id', (req, res) => {
 
 app.delete('/pedidos/:id', (req, res) => {
     const id = Number(req.params.id);
-    pedidos = pedidos.filter(item => item.id !== id);
+    pedidos = pedidos.splice(item => item.id !== id);
     res.json({ mensagem: 'Pedido removido.'})
 });
 
-app.listen(3000, () => {
-    console.log("Servidor rodando na porta 3000");
-});
+
+module.exports = app;

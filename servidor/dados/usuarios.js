@@ -1,4 +1,4 @@
-const usuarios = [
+let usuarios = [
     {
         id: 1,
         nome: "Ana Silva",
@@ -36,4 +36,5 @@ const usuarios = [
     }
 ];
 
+export default usuarios;
 module.exports = usuarios;

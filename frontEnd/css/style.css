@@ -146,6 +146,7 @@ input:focus {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
 }
 
 .links {
